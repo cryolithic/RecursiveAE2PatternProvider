@@ -1,5 +1,24 @@
 Recursive AE2 Pattern Provider
 
+[![Build](https://github.com/cryolithic/recursiveae2patternprovider/actions/workflows/build.yml/badge.svg)](https://github.com/cryolithic/recursiveae2patternprovider/actions/workflows/build.yml)
+
+
+## ⬇️ Download
+
+This is a community-maintained build with fixes applied while we wait for the
+upstream maintainer to merge them. There are two ways to grab the jar:
+
+- **Stable release (recommended):** Head to the
+  [**Releases page**](https://github.com/cryolithic/recursiveae2patternprovider/releases)
+  and download the latest `recursiveae2patternprovider-<version>.jar` from the
+  assets. Drop it into your `mods/` folder.
+- **Latest build:** Open the
+  [**Build workflow**](https://github.com/cryolithic/recursiveae2patternprovider/actions/workflows/build.yml),
+  click the most recent successful run, and download the
+  `recursiveae2patternprovider-jar` artifact (requires being signed in to GitHub).
+
+Requires Minecraft **1.21.1**, **NeoForge 21.1.203+**, and **Applied Energistics 2**.
+
 
 🔄 Overview
 
