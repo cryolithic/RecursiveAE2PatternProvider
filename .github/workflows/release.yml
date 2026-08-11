@@ -7,11 +7,6 @@ name: Release
 #     tags the current commit as v<mod_version> from gradle.properties.
 on:
   push:
-    branches:
-      # Temporary trigger: fires one release from the feature branch because
-      # this session's credentials cannot push tags or dispatch workflows.
-      # Reverted immediately after the release is cut.
-      - 'claude/github-build-pipeline-vpwobi'
     tags:
       - 'v*'
   workflow_dispatch:
@@ -58,7 +53,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
-          target_commitish: main
           name: Recursive AE2 Pattern Provider ${{ steps.mod.outputs.version }}
           files: build/libs/*.jar
           generate_release_notes: true
